@@ -634,7 +634,7 @@ h1 small {
     display: flex;
     flex-direction: column; 
     padding: 30px;
-    max-width: 300px;
+    max-width:350px;
     background-image: url(/img/tiny_grid.png)}
   .project img {
     width: 100%;
@@ -642,11 +642,17 @@ h1 small {
     object-fit: contain; 
     background-color: rgba(255,255,255,.5); } }
 
+@media screen and (max-width: 640px) {
+  .project {
+    max-width: 85%;
+  }
+}
+
 .project h3 {
   margin: 0; }
 
 .project header {
-  order: 2; }
+  order: 1; }
 
 .project .description {
   order: 3; 
@@ -661,7 +667,7 @@ h1 small {
 
 .project figure {
   margin: 0;
-  order: 1; }
+  order: 2; }
 
 .project footer {
   order: 5;
