@@ -709,7 +709,7 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:visited:hover, h1 a:visited {
   background-image: url(/img/tiny_grid.png);
   border: 1px solid #999;
   border-radius: 3px;
-  margin-bottom: 10rem; }
+  margin-bottom: 1rem; }
 
 .card-listing .headerWrap {
   background-color: #fff;
@@ -764,17 +764,24 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:visited:hover, h1 a:visited {
 .card-listing .type-miniproject:hover .headerWrap {
   background-color: rgba(255, 108, 129, 0.8); }
 .card-listing .type-miniproject h3:before {
-  content: "Idea"; }
+  content: "Mini-Project"; }
 
 .card-listing .type-idea .headerWrap {
   background-color: rgba(119, 213, 129, 0.3); }
 .card-listing .type-idea:hover .headerWrap {
   background-color: rgba(119, 213, 129, 0.8); }
 .card-listing .type-idea h3:before {
-  content: "Mini-Project"; }
+  content: "Idea"; }
 
 .card-listing h3 a:link,
 .card-listing h3 a:visited {
+  color: #000;
+  text-decoration: none;
+  font-weight: normal;
+  display: block;
+  margin: 0; }
+.card-listing p a:link,
+.card-listing p a:visited {
   color: #000;
   text-decoration: none;
   font-weight: normal;
@@ -789,7 +796,7 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:visited:hover, h1 a:visited {
   @supports (grid-gap: 10px) {
     .card-listing {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       grid-gap: 2rem; }
     .card-listing li {
       margin: 0; } } }
