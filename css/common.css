@@ -150,7 +150,11 @@ th {
 img {
   max-width: 100%;
   display: block;
-  margin: inherit auto; }
+  margin: auto; }
+
+.imagefig {
+  margin: auto;
+}
 
 /* Configuration
    ========================================================================== */
@@ -705,77 +709,69 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:visited:hover, h1 a:visited {
   background-image: url(/img/tiny_grid.png);
   border: 1px solid #999;
   border-radius: 3px;
-  margin-bottom: 2rem; }
+  margin-bottom: 10rem; }
 
-.card-listing h3 {
+.card-listing .headerWrap {
   background-color: #fff;
   color: #fff;
   margin: 0;
-  padding: 1rem 20px; }
+  border-radius: 3px;
+  padding: .6rem 20px; }
+.headerWrap h3 {
+  margin: 0;
+  color: #000;
+}
 
-.card-listing li:hover h3 {
+.card-listing li:hover .headerWrap {
   transition: all;
   transition-duration: 1s; }
 
-.card-listing .type-article h3 {
+.card-listing .type-random .headerWrap {
   background-color: rgba(50, 205, 235, 0.3); }
 
+.card-listing .headerWrap{
+  background-color: #fff;
+  color: #fff;
+  margin: 0;
+  border-radius: 3px;
+  padding: .6rem 20px; }
+.card-listing .headerWrap p{
+  font-size: 0.7rem ;
+  font-weight:normal ;
+  color: #888;
+  position: relative;
+  top: -5px;
+  margin: 0 0 -10px 0;
+}
+
 .card-listing li h3:before {
-  content: "Article";
+  content: "Random";
   font-size: 0.7rem;
   font-weight: normal;
   background-color: #000;
+  color:#fff;
   border-radius: 10px;
   float: right;
-  padding: 0 5px; }
+  padding: 0 10px; 
+  margin : 0 0 0 10px;}
 
-.card-listing .type-article:hover h3 {
-  background-color: rgba(50, 205, 235, 0.8); }
+.card-listing li p{
+  margin: 0;
+}
 
-.card-listing .type-video h3 {
+.card-listing .type-miniproject .headerWrap {
   background-color: rgba(255, 108, 129, 0.3); }
-
-.card-listing .type-video:hover h3 {
+.card-listing .type-miniproject:hover .headerWrap {
   background-color: rgba(255, 108, 129, 0.8); }
+.card-listing .type-miniproject h3:before {
+  content: "Idea"; }
 
-.card-listing .type-video h3:before {
-  content: "Video"; }
-
-.card-listing .type-spec h3 {
+.card-listing .type-idea .headerWrap {
   background-color: rgba(119, 213, 129, 0.3); }
-
-.card-listing .type-spec:hover h3 {
+.card-listing .type-idea:hover .headerWrap {
   background-color: rgba(119, 213, 129, 0.8); }
-
-.card-listing .type-spec h3:before {
-  content: "Spec"; }
-
-.card-listing .type-browsers h3 {
-  background-color: rgba(253, 137, 78, 0.3); }
-
-.card-listing .type-browsers:hover h3 {
-  background-color: rgba(253, 137, 78, 0.8); }
-
-.card-listing .type-browsers h3:before {
-  content: "Browsers"; }
-
-.card-listing .type-discussion h3 {
-  background-color: rgba(155, 131, 209, 0.3); }
-
-.card-listing .type-discussion:hover h3 {
-  background-color: rgba(155, 131, 209, 0.8); }
-
-.card-listing .type-discussion h3:before {
-  content: "Discuss"; }
-
-.card-listing .type-example h3 {
-  background-color: rgba(249, 175, 70, 0.3); }
-
-.card-listing .type-example:hover h3 {
-  background-color: rgba(249, 175, 70, 0.8); }
-
-.card-listing .type-example h3:before {
-  content: "Code"; }
+.card-listing .type-idea h3:before {
+  content: "Mini-Project"; }
 
 .card-listing h3 a:link,
 .card-listing h3 a:visited {
@@ -786,13 +782,14 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:visited:hover, h1 a:visited {
   margin: 0; }
 
 .card-listing .details {
-  padding: .8rem 1rem 0.2rem 1rem; }
+  padding: .8rem 1rem 0.8rem 1rem; 
+  margin: 0;}
 
 @media screen and (min-width: 800px) {
   @supports (grid-gap: 10px) {
     .card-listing {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
       grid-gap: 2rem; }
     .card-listing li {
       margin: 0; } } }
