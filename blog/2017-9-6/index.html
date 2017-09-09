@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-GB"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Gerry's World</title>
+<!-- <link rel="canonical" href="http://gridbyexample.com/learn/"> -->
+<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/blogPost.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="wrapper">
+    <div class="about">
+      <!-- <div class="follow"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="./Get Started with Grid Layout_files/follow_button.861dfa4968a7fc0e69901a06f838af03.en-gb.html" style="position: static; visibility: visible; width: 274px; height: 28px;" data-screen-name="rachelandrew"></iframe><script type="text/javascript" async="" id="gauges-tracker" data-site-id="5923de867218b50718020ae0" data-track-path="https://track.gaug.es/track.gif" src="./Get Started with Grid Layout_files/track.js"></script><script async="" src="./Get Started with Grid Layout_files/widgets.js" charset="utf-8"></script></div> -->
+      <h1><a href="/">Gerry's World</a></h1>
+      <p>A glimpse into my life</p>
+    </div>
+  </div>
+
+  <nav class="main">
+    <ul class="nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About Me</a></li>
+      <li><a href="/activities">Activities/Experiences</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ********** CONTENT *********** -->
+<div class="blogPost">
+  <h1>Piano Keyboard Repair</h1>
+  <div class="timeStamp">Sept. 6, 2017</div>
+  <br/>
+  <content>
+    <h3>Intro</h3>
+    	<p>I've been wanting a MIDI keyboard for a while so that I could practice piano in my room, especially since my card swipe access to the Duke practice rooms has been revoked on account of my no longer taking private lessons this semester.  The stipulation was that I didn't want to spend more than $50 and ideally less than $25.  I figured this was achievable because every so often I'll see keyboards on the order of $10 pop up on craigslist, though often they're not MIDI enabled.  In this case, I was fairly certain I would have the knowledge and ability to use an Arduino to convert them to MIDI keyboards.  Luckily, I found one that was already a fully functioning MIDI keyboard and controller for $35!  The only problem was that the port was damaged.</p>
+    <h3>Problem Description</h3><a href="/blog/2017-9-6/broken.png"><img src="/blog/2017-9-6/broken_smaller.png" alt="broken keyboard port" align="right" width=30%/></a>
+    	<p>As you can see in the image, the USB MIDI port - which is a USB type B port, is completely broken and I foolishly didn't notice until I had already bought it.  The entire port had to be replaced.</p>
+    <h3>The Fix</h3>
+    	<p>I ordered new USB type B ports from Amazon because I wanted them faster.  I got 10 for something like $3 or something, and since I have so many USB A to USB B cables lying around, I figured I could also use the rest for other projects.  I took apart the casing and desoldered the socket.  I was pleasantly surprised to find that my desoldering skills had considerably improved since the last time I had to desolder items (due to my soldering work over the summer).  I soldered in the new connector and reassembled everything.  TADA!  It's fixed!</p>
+    	<div class="wrapper">
+	    <a href="/blog/2017-9-6/inside.png"><img style="float:left;min-width: 125px;" src="/blog/2017-9-6/inside_smaller.png" alt="disassembled keyboard" width=40% /></a>
+	    <a href="/blog/2017-9-6/fixed.png"><img style="float:left;min-width: 125px;" src="/blog/2017-9-6/fixed_smaller.png" alt="fixed socket" width=40% /></a>
+	    </div>
+	    <div style="clear:both;"></div>
+	<h3>Reflections</h3>
+		<p>In retrospect, I should definitely have bargained down the price to something like $20 or $25, but I didn't know it was broken at the time.  After connecting it to the computer, there were also some issues that I found with a couple knobs and faders spitting out noisy data, but it's only a 1 or 2 and they seem like pretty standard pots and linear slide pots so maybe some day I'll get around to fixing those too.  For now though, I really only need the keyboard and it's working great!  Score :)</p>
+		<div class="wrapper">
+	    <a href="/blog/2017-9-6/full.png"><img style="float:center;min-width: 125px;" src="/blog/2017-9-6/full.png" alt="full keyboard" width=80% /></a>
+	    </div>
+	    <div style="clear:both;"></div>
+  </content>
+
+</div>
+<!-- ********** CONTENT *********** -->
+
+<footer class="footer"><div class="wrapper">
+  <pre>
+  Gerry Chen
+  412-956-3047
+  gerry.chen@duke.edu
+
+  Engineering Undergrad at Duke University
+  Class of 2019
+  </pre>
+</div></footer>
+
+<!-- <script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '5923de867218b50718020ae0');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script> -->
+
+</body>
+</html>
