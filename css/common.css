@@ -535,6 +535,14 @@ h1 small {
   font-weight: both;
   transform: rotate(-20deg); }
 
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 .panel-box {
   background-image: url(/img/tiny_grid.png);
   border: 1px solid #999;
