@@ -414,6 +414,10 @@ article {
 .content {
   max-width: 780px; }
 
+p{
+  text-align: justify;
+}
+
 .header {
   background-color: rgba(0, 0, 0, 0.98);
   background-image: url("/img/inflicted.png");
