@@ -716,10 +716,10 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:visited:hover, h1 a:visited {
   color: #fff;
   text-decoration: none; }
 
-p a:link, p a:visited, p a:hover, p a:visited:hover, p a:visited {
+/*p a:link, p a:visited, p a:hover, p a:visited:hover, p a:visited {
     color: #000;
   text-decoration: none;
-}
+}*/
 
 .card-listing {
   list-style: none;
