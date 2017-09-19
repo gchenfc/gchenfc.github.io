@@ -419,7 +419,7 @@ p{
 }
 
 .header {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(18, 76, 105, .8);
   background-image: url("/img/blueTexture.png");
   color: #fff;
   padding: .5rem 0 0 0;
