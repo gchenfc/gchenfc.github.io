@@ -65,7 +65,7 @@
           success: function (data) {
               //List all .png file names in the page
               $(data).find("a").attr("href", function (i, val) {
-                  if( val.match(/\.(jpe?g|JPE?G|png|gif)$/) ) { 
+                  if( val.match(/\.(jpe?g|JPE?G|png)$/) ) { 
                       $("body").find("#testing").append( "<img src='"+ folder + val +"' style='border:3px solid #000000;display:block;width:80%;margin:2rem auto' >" );
                   }
               });
