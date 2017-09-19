@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 JUL 2017 22:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 SEP 2017 14:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -348,7 +348,7 @@ Overfull \hbox (13.65pt too wide) in paragraph at lines 25--119
  []
 
 
-Overfull \vbox (3.60623pt too high) has occurred while \output is active []
+Overfull \vbox (4.21455pt too high) has occurred while \output is active []
 
 
 [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -369,7 +369,7 @@ m/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb>
-Output written on resume.pdf (1 page, 90180 bytes).
+Output written on resume.pdf (1 page, 90231 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
