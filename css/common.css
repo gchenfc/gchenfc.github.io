@@ -190,7 +190,8 @@ h1 {
   line-height: 52px;
   line-height: 3.25rem;
   margin-top: 104px;
-  margin-top: 6.5rem;
+  /*margin-top: 6.5rem;*/
+  margin-top: 64px;
   margin-bottom: 26px;
   margin-bottom: 1.625rem; }
 
@@ -200,7 +201,8 @@ h2 {
   line-height: 39px;
   line-height: 2.4375rem;
   margin-top: 65px;
-  margin-top: 4.0625rem;
+  /*margin-top: 4.0625rem;*/
+  margin-top: 32px;
   margin-bottom: 13px;
   margin-bottom: 0.8125rem; }
 
