@@ -36,11 +36,29 @@
       <li><a href="/blog">Blog</a></li>
     </ul>
   </nav>
+
+<!-- TODO - FINISH THIS -->
+  <script>
+  if (window.innerWidth<0) {
+    var men = document.getElementsByClassName("main");
+    for (i=0;i<men.length;i++){
+      men[i].style.visibility="hidden";
+      men[i].style.height="0px";
+    }
+    document.write(`
+      <button class="accordion" style="background-color:rgba(255,255,255,.6);margin:0 auto;"><h4 style="float:left;margin:0;padding:8px 32px;">Menu</h4></button>
+          <div class="panel" style="background-color:rgba(255,255,255,.6);">
+            Home
+          </div>
+      `);
+  }
+  </script>
+
 </header>
 
 <!-- ********** CONTENT *********** -->
 <div class="wrapper">
-  <h1 id="home-page" style="margin-top: 64px;">Activities/Experiences</h1>
+  <h1 id="home-page" style="margin-top: 64px;">Activities/&#8203;Experiences</h1>
     <br/>
 
       <section class="activity">
@@ -92,8 +110,61 @@
         </div>
       </section>
 
+      <section class="activity">
+        <div class="activitypic"> <figure class="imagefig">
+          <a href="/studygroups"><img src="/activities/studyGroupEx.png" alt="Math Study Group Example" /></a>
+        </figure> </div>
+
+        <div class="activityname"><a href="/studygroups"><h2>
+          Tutor/TA</h2></a></div>
+        <div class="activitydescription">
+        <div class="content">
+          <p>For much of my high school and college careers, I've been involved in tutoring or TAing in various capacities and settings.  I've historically viewed it as a way simultaneously to give back where I can and to refresh and solidify my knowledge.  Click the dropdowns to see more details.</p>
+          <button class="accordion"><h4 style="float:left">Duke</h4><h4 style="float:right;color:#444">+&nbsp&nbsp</h4></button>
+          <div class="panel">
+            <p><b>Math Study Groups</b> are designed to serve as supplemental recitations where we work through problems from a worksheet and/or any unclarities students may have.  I've been running them for 3 semesters now (Fall 2016 - present) and have led Multivariable Calc., Linear Algebra, and Diff. Eq.  Some worksheet examples are available <a href="/studygroups">here</a>.</p>
+            <p><b>Teaching Assistant</b> - I've been TAing since Fall 2016 and I've TA-d:
+              <ul style="margin:0">
+                <li>EGR201 grading/OH (Statics).</li>
+                <li>ECE230 lab (Microelectronics)</li>
+                <li>CS201 recitation (Data Structures+Algorithms)</li>
+                <li>EGR103 lab (intro to Matlab, LaTeX, etc)</li>
+              </ul>
+            </p>
+            <p><b>Peer Tutoring</b> is a program at Duke for students to get free one-on-one tutoring by a (paid) peer.  I tutored multivariable calculus and linear algebra from Fall 2016 to Spring 2017.</p>
+            <p><b>America Reads America Counts</b> is a program where Duke students go to local elementary and middle schools to help in the classroom, both in one-on-one and group settings.</p>
+          </div>
+          <button class="accordion"><h4 style="float:left">High School</h4><h4 style="float:right;color:#444">+&nbsp&nbsp</h4></button>
+          <div class="panel">
+            <p><b>Kumon Math and Reading Center of Fox Chapel</b> - is a franchise of the Kumon program.  There, I created personalized curriculums, tutored, graded, and communicated with parents among other things.  Kumon covers pre-counting to Calc 2 and ABC's to Shakespeare, with the majority of students in late elementary school.</p>
+            <p><b>Private Tutoring</b> - I tutored privately on both paid and volunteer bases.</p>
+            <p><b>Math Help Room</b> was a place at school where students could get help on homework or studying during homeroom.</p>
+            <p><b>Volunteers of America</b> aimed to improve literacy and math skills amongst low income children.</p>
+          </div>
+        </div>
+        </div>
+      </section>
+
 </div>
 <!-- ********** CONTENT *********** -->
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i=0;i<acc.length;i++){
+    acc[i].onclick = function(){
+      this.classList.toggle("active");
+      this.style.maxWidth="none";
+      var panel=this.nextElementSibling;
+      if (panel.style.maxHeight){
+        panel.style.maxHeight=null;
+        this.style.maxWidth="400px";
+      }else{
+        panel.style.maxHeight=panel.scrollHeight + "px";
+      }
+    }
+  }
+</script>
 
 <footer class="footer"><div class="wrapper">
   <pre>
