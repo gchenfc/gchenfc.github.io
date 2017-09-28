@@ -63,7 +63,7 @@
 
       <section class="activity">
         <div class="activitypic"> <figure class="imagefig">
-          <a href="/activities/Robot_Button_Pressing_In_Human_Environments__ICRA.pdf"><img src="PPUpaperCover.png" /></a>
+          <a href="/activities/Robot_Button_Pressing_In_Human_Environments__ICRA.pdf"><img src="PPUpaperCover.png" style="max-height: 300px;" /></a>
         </figure> </div>
 
         <div class="activityname"><a href="http://motion.pratt.duke.edu/"><h2>
@@ -72,12 +72,14 @@
         <div class="content">
           <p><!-- <a href="http://www.duke-ev.org/"> -->
           The Intelligent Motion Labratory (IML) is led by Professor Kris Hauser.  Starting in the Spring of 2017 and continuing through the Summer via a generous REU sponsorship, I've been working with Ph.D. student Fan Wang designing a robot attachment to robustly actuate switches, buttons, knobs, and other electronic input forms designed for human use.  The project is part of a larger one to create a nursing robot named TRINA.  Our project involves two primary components: (1) refining a standalone system which can consistently and autonomously actuate a wide variety of buttons, and (2) integrating the standalone system on the Baxter robot and coordinate motion planning to reach desired buttons with minimal manipulability at the end joint configuration.
-          <!-- </a> --></p>
-          <p> As of Fall 2017, we're taking a break from the project after having submitted a paper proposal to ICRA and I'm now working on a small project to create large quantities of realistic molds of corneas for the testing of an eye surgery robot being developed by Mark Draelos and Brenton Keller.
+          <!-- </a> --><!-- </p> -->
+          <!-- <p> --> As of Fall 2017, we're taking a break from the project after having submitted a paper proposal to ICRA.
           </p>
         </div>
         </div>
       </section>
+
+      <!-- <hr /> -->
 
       <section class="activity">
         <div class="activitypic"> <figure class="imagefig">
@@ -95,7 +97,25 @@
         </div>
       </section>
 
+      <!-- <hr /> -->
 
+      <section class="activity">
+        <div class="activitypic"> <figure class="imagefig">
+          <a href="corneaPics/cornea.JPG"><img src="corneaPics/cornea.png" /></a>
+          <a href="corneaPics/phantom.pdf"><img src="corneaPics/phantom.png" /></a>
+        </figure></div>
+
+        <div class="activityname"><a href="corneaPics/"><h2>Biophotonics Group</h2></a></div>
+
+        <div class="activitydescription">
+          <div class="content">
+            <p>
+            Starting in September 2017, I've been helping <a href="http://biophotonics.bme.duke.edu/content/draelos">Mark Draelos</a> and <a href="http://biophotonics.bme.duke.edu/content/keller">Brenton Keller</a> who are working on computer-assisted surgery guided by three-dimensional imaging.  Specifically, I have been designing replicas of corneas for them to be able to perform testing more easily and with much greater volume than their previous testing with limited cadaver corneas.  </p>
+
+      </section>
+
+      <!-- <hr /> -->
+      
       <section class="activity">
         <div class="activitypic"> <figure class="imagefig">
           <a href="/projects/solarbenches"><img src="/projects/solarbenches/thumb.jpeg" alt="Solar Benches Installation" /></a>
@@ -110,13 +130,15 @@
         </div>
       </section>
 
+      <!-- <hr /> -->
+
       <section class="activity">
         <div class="activitypic"> <figure class="imagefig">
           <a href="/studygroups"><img src="/activities/studyGroupEx.png" alt="Math Study Group Example" /></a>
         </figure> </div>
 
         <div class="activityname"><a href="/studygroups"><h2>
-          Tutor/TA</h2></a></div>
+          Tutoring/&#8203;Teaching Assistant</h2></a></div>
         <div class="activitydescription">
         <div class="content">
           <p>For much of my high school and college careers, I've been involved in tutoring or TAing in various capacities and settings.  I've historically viewed it as a way simultaneously to give back where I can and to refresh and solidify my knowledge.  Click the dropdowns to see more details.</p>
@@ -159,8 +181,10 @@
       if (panel.style.maxHeight){
         panel.style.maxHeight=null;
         this.style.maxWidth="400px";
+        panel.style.padding="0px 18px";
       }else{
         panel.style.maxHeight=panel.scrollHeight + "px";
+        panel.style.padding="6px 18px";
       }
     }
   }
