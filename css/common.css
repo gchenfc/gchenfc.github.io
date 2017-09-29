@@ -457,7 +457,19 @@ p{
   transition: all;
   transition-duration: .5s; }
 
-.main .nav {
+.auxMenu {
+  border-bottom: 1px solid #222;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all;
+  transition-duration: .5s;
+
+  /*position:absolute;
+  top:0;
+  right:0;
+  margin:0;
+*/}
+
+.main .nav, .auxMenu .nav {
   list-style: none;
   margin: 0 auto;
   width: 90%;
@@ -467,14 +479,71 @@ p{
   flex-direction: column;
   justify-content: space-between; }
 
+.auxMenu .nav{
+  width: 100%;
+}
+
 .main .nav a:link,
-.main .nav a:visited {
+.main .nav a:visited,
+.auxMenu .nav a:link,
+.auxMenu .nav a:visited{
   font-weight: bold;
-  color: #000; }
+  color: #000; 
+  text-decoration: none;
+  display: block;
+  padding: .5rem 1rem;
+  margin: 0; }
+.auxMenu .nav{
+  padding:0;
+  margin:0;
+}
+.auxMenu .nav a{
+  text-align: center;
+}
 
 .nav a:hover:link,
 .nav a:hover:visited {
   background-color: rgba(255, 255, 255, 0.6); }
+
+/*.auxMenu:hover {
+  transition:.3s;
+  min-width:100%;
+}*/
+
+li.dropdown {
+    display: inline-block;
+    min-width: 100px;
+    transition:.5s;
+}
+.dropdown:hover{
+    min-width: 200px;
+    background-color: #fff
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /*background-color: rgb(157,183,195);
+    background-color: rgba(255,255,255,.6);*/
+    background: linear-gradient(0deg,rgba(255,255,255,.6),rgba(255,255,255,.6)),url("/img/blueTexture.png") repeat;
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+  transition:.1s;
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
 
 .subnav {
   list-style: none;
@@ -505,13 +574,6 @@ p{
   .main .nav {
     flex-direction: row;
     justify-content: space-between; } }
-
-.main .nav a:link,
-.main .nav a:visited {
-  text-decoration: none;
-  display: block;
-  padding: .5rem 2rem;
-  margin: 0; }
 
 .subnav {
   flex-direction: row; }

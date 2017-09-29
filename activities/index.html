@@ -21,37 +21,33 @@
 <header class="header">
   <div class="wrapper">
     <div class="about">
-      <!-- <div class="follow"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="./Get Started with Grid Layout_files/follow_button.861dfa4968a7fc0e69901a06f838af03.en-gb.html" style="position: static; visibility: visible; width: 274px; height: 28px;" data-screen-name="rachelandrew"></iframe><script type="text/javascript" async="" id="gauges-tracker" data-site-id="5923de867218b50718020ae0" data-track-path="https://track.gaug.es/track.gif" src="./Get Started with Grid Layout_files/track.js"></script><script async="" src="./Get Started with Grid Layout_files/widgets.js" charset="utf-8"></script></div> -->
-      <h1><a href="/">Gerry's World</a></h1>
-      <p>A glimpse into my life</p>
+      <h1 id="websiteTitle"><a href="/">Gerry's World</a></h1>
+      <p id="aboutLine">A glimpse into my life</p>
     </div>
   </div>
 
   <nav class="main">
     <ul class="nav">
       <li><a href="/">Home</a></li>
-      <li><a href="/about">About Me</a></li>
+      <li><a href="/about">About&nbsp;Me</a></li>
       <li><a href="/activities">Activities/Experiences</a></li>
       <li><a href="/projects">Projects</a></li>
       <li><a href="/blog">Blog</a></li>
     </ul>
   </nav>
 
-<!-- TODO - FINISH THIS -->
+  <!-- narrow screen menu -->
   <script>
-  if (window.innerWidth<0) {
-    var men = document.getElementsByClassName("main");
-    for (i=0;i<men.length;i++){
-      men[i].style.visibility="hidden";
-      men[i].style.height="0px";
+    if (window.innerWidth<650) {
+      var el = document.getElementById("aboutLine")
+      el.parentNode.removeChild(el);
+      document.getElementById("websiteTitle").style.paddingBottom="1rem";
+      var men = document.getElementsByClassName("main");
+      for (i=0;i<men.length;i++){
+        men[i].parentNode.removeChild(men[i]);
+      }
+      document.write('<nav class="auxMenu"><ul class="nav"><li class="dropdown"><a href="javascript:void(0)">Menu</a><div class="dropdown-content"><a href="/">Home</a><a href="/about">About&nbsp;Me</a><a href="/activities">Activities/Experiences</a><a href="/projects">Projects</a><a href="/blog">Blog</a></div></li></ul></nav>');
     }
-    document.write(`
-      <button class="accordion" style="background-color:rgba(255,255,255,.6);margin:0 auto;"><h4 style="float:left;margin:0;padding:8px 32px;">Menu</h4></button>
-          <div class="panel" style="background-color:rgba(255,255,255,.6);">
-            Home
-          </div>
-      `);
-  }
   </script>
 
 </header>
